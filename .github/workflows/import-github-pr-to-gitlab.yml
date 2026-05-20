@@ -125,7 +125,7 @@ jobs:
           PY
           )"
 
-          git clone --depth=1 --branch "${GITLAB_TARGET_BRANCH}" "${clone_url}" gitlab-source
+          git clone --branch "${GITLAB_TARGET_BRANCH}" "${clone_url}" gitlab-source
           cd gitlab-source
 
           git checkout -B "${IMPORT_BRANCH}"
